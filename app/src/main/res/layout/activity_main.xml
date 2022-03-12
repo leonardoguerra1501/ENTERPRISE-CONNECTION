@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUSTENTAPP"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#11894F"
+        android:fontFamily="@font/archivo"
+        android:textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textColor="#AAAAAA"
+        android:typeface="normal"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/ilustracao"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/illustration" />
+
+    <TextView
+        android:id="@+id/txt_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ilustracao"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/archivo"
+        android:text="Usuário"
+        android:textColor="#11894F"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_usuario"
+        android:background="#fff"
+        android:hint="Digite seu usuario (email)"
+        android:padding="5dp"
+        android:textColorHint="#C5C5C5"
+        android:textColor="#A8A8A8"
+        />
+
+    <TextView
+        android:id="@+id/txt_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:fontFamily="@font/archivo"
+        android:textColor="#11894F"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/edt_usuario"/>
+
+    <EditText
+        android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua senha"
+        android:textColorHint="#C5C5C5"
+        android:textColor="#A8A8A8"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_below="@id/txt_senha"/>
+
+    <Button
+        android:id="@+id/btnLoginNtv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_senha"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#11894F"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/archivo"
+        android:text="Entrar"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLoginNtv"
+        android:backgroundTint="#4285F4"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/archivo"
+        android:text="Entrar com Google"
+        android:textSize="16sp"/>
+
+
+
+    <TextView
+        android:id="@+id/txv_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Cadastre-se"
+        android:textColor="#6E6E6E"
+        android:textSize="18sp"
+        android:onClick="onClickCadastro"/>
+
+
+</RelativeLayout>

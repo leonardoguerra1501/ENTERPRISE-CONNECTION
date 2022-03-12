@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context=".PageHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fml_menu"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txv_diario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Desafios diários"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:fontFamily="@font/archivo"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            tools:ignore="MissingConstraints" />
+
+        <FrameLayout
+            android:id="@+id/fml_1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#11894F"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txv_diario"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recolha 5 papeis que você encontrar no chão"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fml_2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#11894F"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txv_diario"
+            app:layout_constraintStart_toEndOf="@+id/fml_1"
+            android:layout_marginStart="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fale com 3 novas pessoas"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txv_equipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Desafios diários"
+            android:textColor="#000000"
+            android:fontFamily="@font/archivo"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/fml_1"
+            tools:ignore="MissingConstraints" />
+
+        <FrameLayout
+            android:id="@+id/fml_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#11894F"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txv_equipe"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Você deve pedir um abraço para 5 pessoas em que você não se comunica tanto"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fml_menu"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F0F2F5" />
+
+    <ImageView
+        android:id="@+id/feed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/compass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/empresa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/grid"
+        android:layout_toEndOf="@id/feed"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/grupo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/users"
+        android:layout_toEndOf="@id/empresa"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile"
+        android:layout_toEndOf="@id/grupo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="30dp"/>
+</RelativeLayout>
